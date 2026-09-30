@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex and grid layout</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chango&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-slate-800">
+        <!-- parent root element with equal -->
+         <div class="grid gap-4 sm:grid-cols-2 grid-cols-2 m-4">
+            <!-- homw many no. of 2 element handle -->
+            <div class="bg-yellow-500 text-white min-h-[100px] shadow-lg rounded-lg">1</div>
+            <div class="bg-teal-500 text-white min-h-[100px] shadow-lg rounded-lg">2</div>
+         </div>
+
+          <div class="grid gap-4 sm:grid-cols-3 m-4">
+            <!-- homw many no. of 3 element handle -->
+            <div class="bg-red-500 text-white min-h-[100px] shadow-lg rounded-lg">1</div>
+            <div class="bg-purple-500 text-white min-h-[100px] shadow-lg rounded-lg">2</div>
+            <div class="bg-zinc-300 text-white min-h-[100px] shadow-lg rounded-lg">3</div>
+         </div>
+
+             <!-- parent root element with non-equal -->
+                <div class="grid gap-4 sm:grid-cols-12 m-4">
+                 <!-- homw many no. of 2 element handle -->
+            <div class="bg-green-500 text-white min-h-[100px] shadow-lg rounded-lg sm:col-span-2 sm:block hidden">1</div>
+            <div class="bg-orange-500 text-white min-h-[100px] shadow-lg rounded-lg sm:col-span-8">2</div>
+             <div class="bg-blue-500 text-white min-h-[100px] shadow-lg rounded-lg sm:col-span-2 sm:block hidden">3</div>
+         </div>
+         </div>
+
+
+
+         <!-- learn by wsclub tech -->
+          <!-- grid layout column wise -->
+        <div class="text-white grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 m-4 gap-4 py-12">
+            <div class="w-full bg-red-500 py-4 text-center col-span-2">1</div>
+            <div class="w-full bg-red-500 py-4 text-center">2</div>
+            <div class="w-full bg-red-500 py-4 text-center">3</div>
+            <div class="w-full bg-red-500 py-4 text-center">4</div>
+            <div class="w-full bg-red-500 py-4 text-center">5</div>
+            <div class="w-full bg-red-500 py-4 text-center">6</div>
+            <div class="w-full bg-red-500 py-4 text-center">7</div>
+            <div class="w-full bg-red-500 py-4 text-center">8</div>
+        </div>
+        
+                  <!-- grid layout row wise -->
+        <div class="text-white grid grid-rows-1 grid-flow-col m-4 gap-4 py-8">
+            <div class="w-full bg-purple-800 py-4 text-center row-span-2 col-span-2 sm:block hidden">1</div>
+            <div class="w-full bg-purple-500 py-4 text-center">2</div>
+            <div class="w-full bg-purple-500 py-4 text-center">3</div>
+            <div class="w-full bg-purple-500 py-4 text-center col-start-3 col-end-8">4</div>
+            <div class="w-full bg-purple-500 py-4 text-center">5</div>
+            <div class="w-full bg-purple-500 py-4 text-center">6</div>
+            <div class="w-full bg-purple-500 py-4 text-center">7</div>
+            <div class="w-full bg-purple-800 py-4 text-center row-span-2 col-span-2 sm:block hidden">8</div>
+        </div>  
+</body>
+</html> 

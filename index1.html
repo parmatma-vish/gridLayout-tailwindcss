@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tailwind - A</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+  rel="stylesheet"
+/>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="w-full h-full bg-slate-800">
+    
+    <div class="bg-slate-700 w-76 h-80 p-4 rounded-xl m-4 font-semibold shadow-xl/30 flex flex-col float-right my-8">
+      <i class="ri-close-fill text-white font-semibold text-2xl w-8 text-center rounded-xl translate-x-60 cursor-pointer hover:bg-green-600 hover:text-black font-semibold "></i>
+      <div class="mb-8 flex justify-center flex-col items-center">
+      <img class=" w-36 h-36 rounded-full overflow-hidden border-2 border-white"
+            src="https://images.unsplash.com/photo-1762330467475-a565d04e1808?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHVzZXIlMjBpbWFnZXxlbnwwfHwwfHx8MA%3D%3D">
+      </div>
+
+           <p class="text-md px-4 font-semibold text-white inline-block">UserName:<span class="px-2 text-green-400 font-bold">Chandan Kumar</span></p>
+           <p class="text-md px-4 font-semibold text-white inline-block">UserEmail:<span class="px-2 text-green-400 font-bold">abc123@gmail.com</span></p>
+      <div class="text-lg pl-4 mb-8 text-red-400 font-semibold cursor-pointer"><a href="#logout"></a>Logout</div>
+    </div>
+
+
+    <!-- hero or mein section -->
+    <div">
+      <h2 class="text-white text-8xl font-bold capitalize text-center p-4 my-4 overflow-scrool">
+        fruits<span class="text-purple-700">Menu</span>
+      </h2>
+      <div class="flex w-full h-auto justify-evenly items-center gap-8 mb-4 py-22">
+        <div>
+          <img class="rounded-xl border-2 shadow-sm w-md h-auto"
+            src="https://images.unsplash.com/photo-1514995669114-6081e934b693?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHBuZyUyMGZydWl0cyUyMGltYWdlfGVufDB8fDB8fHww"
+            alt="image"
+          />
+          <p class="text-white text-xl font-semibold lowercase text-center py-2">item 1</p>
+        </div>
+        <div>
+          <img class="rounded-xl border-2 shadow-sm w-md h-auto"
+            src="https://plus.unsplash.com/premium_photo-1671379086152-0effad2b1e09?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8cG5nJTIwZnJ1aXRzJTIwaW1hZ2V8ZW58MHx8MHx8fDA%3D"
+          />
+             <p class="text-white text-xl font-semibold lowercase text-center py-2">item 2</p>
+        </div>
+        <div>
+          <img class="rounded-xl border-2 shadow-sm w-md h-auto"
+          src="https://images.unsplash.com/photo-1609889132493-1a2b06cd6631?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHBuZyUyMGZydWl0cyUyMGltYWdlfGVufDB8fDB8fHww" alt="image-3">
+            <p class="text-white text-xl font-semibold lowercase text-center py-2">item 3</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- our products -->
+       <h3 class="flex text-3xl text-white justify-center items-center mt-24">Our Products</h3>
+       <div class="flex justify-evenly items-center gap-8 pb-16">
+      <div class="w-52 h-auto border-2 border-white mt-8 p-4 rounded-xl">
+        <img class="pb-4 overflow-hidden rounded-xl"
+        src="https://plus.unsplash.com/premium_photo-1675793715030-0584c8ec4a13?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y29kaW5nJTIwc3ltYm9sJTIwaW1hZ2UlMjBwbmd8ZW58MHx8MHx8fDA%3D" alt="skil-image">
+        <h2 class="text-2xl capitalize pb-4 text-center text-zinc-400">Language Reports</h2>
+        <P class="text-white text-sm font-semibold text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, error.</P>
+        <button class="text-center my-4 text-xl capitalize bg-slate-900 px-4 py-1 mt-6 border-1 rounded-xl text-white translate-x-2">explore skills</button>
+      </div>
+
+        <div class="w-52 h-auto border-2 border-white mt-8 p-4 rounded-xl">
+        <img class="pb-4 overflow-hidden rounded-xl"
+        src="https://media.istockphoto.com/id/2292419283/photo/3d-render-of-a-blue-wallet-with-green-banknotes-and-a-password-pin-code-symbol-isolated-on.webp?a=1&b=1&s=612x612&w=0&k=20&c=ra0rRSPIiJ2ZSjU6ytXFiATzijyD01dcyMQzz43yeRw=" alt="skil-image">
+        <h2 class="text-2xl capitalize pb-4 text-center text-zinc-400">Payment Reports</h2>
+        <P class="text-white text-sm font-semibold text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, error.</P>
+        <button class="text-center my-4 text-xl capitalize bg-slate-900 px-4 py-1 mt-6 border-1 rounded-xl text-white translate-x-2">explore skills</button>
+      </div>
+
+        <div class="w-52 h-auto border-2 border-white mt-8 p-4 rounded-xl">
+        <img class="pb-4 overflow-hidden rounded-xl"
+        src="https://media.istockphoto.com/id/2288626498/photo/minimalist-3d-laptop-illustration-with-code-symbol-in-speech-bubble-digital-development-and.webp?a=1&b=1&s=612x612&w=0&k=20&c=rOevDSN5-DCKqkMJjU8kM7IVAm_XQVs83HK4_OjDOEQ=" alt="skil-image">
+        <h2 class="text-2xl capitalize pb-4 text-center text-zinc-400">Upgrade Reports</h2>
+        <P class="text-white text-sm font-semibold text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, error.</P>
+        <button class="text-center my-4 text-xl capitalize bg-slate-900 px-4 py-1 mt-6 border-1 rounded-xl text-white translate-x-2">explore skills</button>
+      </div>
+
+        <div class="w-52 h-auto border-2 border-white mt-8 p-4 rounded-xl">
+        <img class="pb-4 overflow-hidden rounded-xl"
+        src="https://plus.unsplash.com/premium_photo-1770541760092-6a0b16301ad7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGNvZGluZyUyMHN5bWJvbCUyMGltYWdlJTIwcG5nfGVufDB8fDB8fHwwD" alt="skil-image">
+        <h2 class="text-2xl capitalize pb-4 text-center text-zinc-400">Financial Reports</h2>
+        <P class="text-white text-sm font-semibold text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, error.</P>
+        <button class="text-center my-4 text-xl capitalize bg-slate-900 px-4 py-1 mt-6 border-1 rounded-xl text-white translate-x-2">explore skills</button>
+      </div>
+
+   
+     </div>
+
+
+
+    <!-- footer section -->
+     
+     <div class="w-full h-auto bg-slate-700 flex justify-evenly items-center gap-2 p-8">
+      <div class="flex flex-col text-white w-48 h-auto bg-black p-8 flex justify-center items-center rounded-full">
+      
+          <i class="ri-shield-user-fill text-green-800 text-4xl bg-white my-4 p-2 rounded-full"></i>
+          <P>8000+</P>
+          <H4>user details</H4>
+      </div>
+
+      <div class="flex flex-col text-white w-48 h-auto bg-black p-8 flex justify-center items-center rounded-full">
+         <i class="ri-linkedin-box-fill text-blue-800 text-4xl bg-white my-4 p-2 rounded-full"></i>
+          <P>9999+</P>
+          <H4>linkedin details</H4>
+      </div>
+
+      <div class="flex flex-col text-white w-48 h-auto bg-black p-8 flex justify-center items-center rounded-full">
+          <i class="ri-github-fill text-zinc-800 text-4xl bg-white my-4 p-2 rounded-full"></i>
+          <P>10500+</P>
+          <H4>github details</H4>
+      </div>
+
+      <div class="flex flex-col text-white w-48 h-auto bg-black p-8 flex justify-center items-center rounded-full">
+          <i class="ri-youtube-line text-red-600 text-4xl bg-white my-4 p-2 rounded-full"></i>
+          <P>12000+</P>
+          <H4>social media</H4>
+      </div>
+    </div>
+     
+  </body>
+</html>
